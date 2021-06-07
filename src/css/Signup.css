@@ -1,0 +1,92 @@
+body {
+  overflow: hidden;
+}
+
+.form-container {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-bg {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.8);
+}
+
+.form {
+  width: 25em;
+  height: 30em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: transparent;
+  justify-content: space-evenly;
+}
+
+.form-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1rem;
+}
+
+.form-title .title-txt {
+  font-size: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.form-item {
+  width: 20em;
+  height: 3em;
+  color: #fff;
+  outline: none;
+  padding: 2em;
+  border: 1px solid;
+  border-image-slice: 1;
+  letter-spacing: 1px;
+  background: transparent;
+  border-image-source: linear-gradient(to left, #482e4c, red);
+}
+
+.terms {
+  width: 70%;
+  font-weight: 100;
+  font-size: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.video-bg {
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+}
+
+.submit-btn {
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  font-weight: 100;
+  letter-spacing: 5px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .video-bg,
+  .black-bg {
+    display: none;
+  }
+
+  .form-container {
+    background: #000;
+  }
+}
